@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <style>
+
+        a:link {color: blue; text-decoration: underline; display: block; background-color: #b2dba1;
+        font-weight: bold; width: 140px; word-spacing: 2px;}
+        a:visited {color: red;}
+        a:hover {color: #008000; font-size: 20px;}
+        a:active {color: saddlebrown;}
+        ul.a {list-style-type: square;}
+        ol.a {list-style-type: lower-latin;}
+        ul.b {letter-spacing: -10px}
+        ul.b li {list-style-type: none; display: inline-block; background-color: #000000; font: bold;
+            color: white; padding: 5px 20px; letter-spacing: normal;}
+        table {border: 2px solid #000000; border-collapse: collapse; text-align: center;}
+        th {border: 1px solid #000000; padding: 4px 30px; background-color: #b2dba1; color: white;}
+        tr.a td {border:1px solid #000000; padding: 4px 30px; border-style: dashed;}
+        td.a {border:1px solid #000000; padding: 4px 30px; border-color: #00CCFF; }
+        td.b {border:1px solid #000000; padding: 4px 30px; background-color: lightgoldenrodyellow;}
+        .small {width: 200px}
+        p.small span {float:left; font-size: 50px; line-height:1.2em; width: 1.2em; font-family: monospace; }
+
+        .top {margin: 0px; padding: 0px; background-color: rgba(15, 3, 4, 0.42)}
+        .top ul {letter-spacing: -20px; }
+        .top ul li{letter-spacing: normal; color: white; text-align: center; display: inline-block;
+        padding:0px 15px; font-family: "Times New Roman"; font-size: 1.2em;}
+        .top ul li a {background-color: inherit; color: white; padding: 15px 0px 15px 15px;
+         margin-left: -60px; }
+        #top2 {background-color: #2e8028; color: white; padding: 15px 0px 15px 15px;
+            margin-left: -60px; }
+        .top ul li a:link {text-decoration: none;}
+        .top ul li a:hover {text-decoration: none; font-size: 1em; background-color:#000000; }
+        .left{ font-family: "Times New Roman"; margin: 0px; padding: 0px; width: 160px;
+          float:left; }
+        .left ul {text-align: center;  list-style-type: none;   }
+        .left ul li {margin: 4px 0px; }
+        .left ul li a {color: #000000; text-decoration: no-underline; display: inherit;
+        background-color: rgba(45, 51, 69, 0.18); font-weight: inherit; width: inherit;
+            word-spacing: inherit; }
+        .left ul li a:link {text-decoration: none; background-color: rgba(45, 51, 69, 0.18);
+            padding:8px 0px 8px 0px;}
+        .left ul li a:hover {text-decoration: none; font-size: 1em; background-color:#000000;
+        color: white;}
+         .right {width:50px; float: left; margin-left: 30px;}
+
+    </style>
+</head>
+<body>
+<h1>Hello</h1>
+<p><a href="http://www.baidu.com" target="_blank">连接百度</a></p>
+<p>列表实例</p>
+<ul class="a">
+    <li>coffee</li>
+    <li>tea</li>
+    <li>coca coca</li>
+</ul>
+<ol class="a">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Coca</li>
+</ol>
+
+<p>创建表格</p>
+<table>
+    <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+    </tr>
+   <tr>
+       <td class="a">Alfreds Futterkiste</td>
+       <td class="a">Maria Anders</td>
+       <td class="a">Germany</td>
+   </tr>
+    <tr>
+        <td class="b">Berglunds snabbköp</td>
+        <td class="b">Christina Berglund</td>
+        <td class="b">Sweden</td>
+    </tr>
+    <tr class="a">
+        <td colspan="2">Berglunds snabbköp</td>
+        <td>Sweden</td>
+    </tr>
+    <tr>
+        <td class="b">Berglunds snabbköp</td>
+        <td class="b">Christina Berglund</td>
+        <td class="b" rowspan="2">Sweden</td>
+    </tr>
+    <tr class="a">
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+    </tr>
+</table>
+<div>
+    <p>Display显示</p>
+    <ul>
+        <li>科技</li>
+        <li>学科</li>
+        <li>运动</li>
+        <li>蔬菜</li>
+    </ul>
+    <ul class="b">
+        <li>科技</li>
+        <li>学科</li>
+        <li>运动</li>
+        <li>蔬菜</li>
+    </ul>
+</div>
+<p class="small">
+    <span>这</span>是一些文本。
+    这是一些文本。这是一些文本。
+    这是一些文本。这是一些文本。这是一些文本。
+    这是一些文本。这是一些文本。这是一些文本。
+    这是一些文本。这是一些文本。这是一些文本。
+</p>
+<hr/>
+
+<div class="top">
+    <ul>
+        <li><a href="http://www.baidu.com" target="_blank" id="top2">主页</a></li>
+        <li><a href="" target="_blank">新闻</a></li>
+        <li><a href="" target="_blank">联系我们</a></li>
+        <li><a href="" target="_blank">关于我们</a></li>
+    </ul>
+</div>
+
+<div class="left">
+    <ul>
+        <li><a href="">The Flight</a></li>
+        <li><a href="" target="_blank">The Cityt</a></li>
+        <li><a href="">The Island</a></li>
+        <li><a href="">The Food</a></li>
+        <li><a href="">The People</a></li>
+        <li><a href="">The History</a></li>
+        <li><a href="">The Oceans</a></li>
+    </ul>
+</div>
+<div class="right">
+    <p>aaaaaaaaaaaaaaaaaaaaaa</p>
+</div>
+
+</body>
+</html>
