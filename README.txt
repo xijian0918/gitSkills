@@ -74,3 +74,48 @@
    3) html会压缩空格，所以直观上显示的是字符串，没有显示空格
    4）数字和布尔值相加，布尔值false转为0，true为1.
    5）数字与null（空值）相加，null转化为数字0；字符串与null（空值）相加，null转化为字符串。
+
+2018/2/23
+1. js学习
+2. notes
+   1）return false，在大多数情况下，为事件处理函数返回false，可以防止默认的事件       行为，例如默认点击一个<a>元素，页面会跳转到该元素href属性指定的页。而retur      n false可以终止这个跳转
+   2) 检验是否为2-4个字的中文名称组成
+      function ischina(str){
+      var reg=/^[\u4E00-\u9FA5]{2,4}$/;
+      return reg.test(str);
+      }
+   3) JS中的所有数据都是以64位浮点型数据(float)来存储。所有的编程语言，包括JS对       浮点型数据的精确度都很难确定。例如小数相加，需转化为整数后相加再抓为小数。
+
+2018/2/27
+1. ES6学习：let和const命令
+2. notes
+   1) 主要针对闭包进行了一个比较深入的了解
+
+2018/2/28
+1. ES6学习：变量的结构赋值
+2. notes
+   1）了解以下两个参数的区别
+       function move({x = 0, y = 0} = {}) {         //此处参数为一个对象？！
+       return [x, y];
+       }
+
+move({x: 3, y: 8}); // [3, 8]
+move({x: 3}); // [3, 0]
+move({}); // [0, 0]
+move(); // [0, 0]
+      
+      function move({x, y} = { x: 0, y: 0 }) {     //此处参数只是为指定默认值?!
+      return [x, y];
+      }
+
+move({x: 3, y: 8}); // [3, 8]
+move({x: 3}); // [3, undefined]
+move({}); // [undefined, undefined]
+move(); // [0, 0]
+    2）函数只能返回一个值，如要返回多个值，只能将他们放在数组或者对象里返回。
+    3) \u0000~\uFFFF 正常字符的Unicode范围
+    4）JavaScript 内部，字符以 UTF-16 的格式储存，每个字符固定为2个字节。对于那些需要4个字节储存的字符（Unicode 码点大于0xFFFF的字符），JavaScript 会认为它们是两个字符。
+    5)fromCodePoint方法定义在String对象上，而codePointAt方法定义在字符串的实例对象上
+3. 疑问
+   加载模块时，往往需要指定输入哪些方法。解构赋值使得输入语句非常清晰。
+   const { SourceMapConsumer, SourceNode } = require("source-map"); ??????
