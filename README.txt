@@ -119,3 +119,8 @@ move(); // [0, 0]
 3. 疑问
    加载模块时，往往需要指定输入哪些方法。解构赋值使得输入语句非常清晰。
    const { SourceMapConsumer, SourceNode } = require("source-map"); ??????
+
+2018/3/12
+   数组操作: 合并数组-concat();数组的元素组成字符串：join;删除最后一个元素:pop（）；数组的末尾添加新的元素push（）；删除数组的第一个元素shift（）
+	var d=new Date();
+	var t=d.toLocaleTimeString(); 用以获取时间XX:XX:XX
